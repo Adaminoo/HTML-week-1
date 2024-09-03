@@ -1,25 +1,50 @@
 body {
     margin:0;
     padding:0;
-    width:100%;
 }
 
-.modal {
-    width:100%;
-    height:100vh;
+.inline {
+    display:flex; /*makes other elements inside the div display inline*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top:0;
+    padding:0;
+    /*can make text elements line up center instead of top*/
+    /*line-height: 0;*/
+}
+
+.cbox {
+    margin:auto;
+    width:200px;
+    height:200px;
+    background-color: black;
     position:absolute;
-    background-color: rgba(0,0,0,0.5);
-    top:0;
-    display:flex;
-    justify-content: center;
-    align-items:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 20px;
+    z-index:2;
 }
 
-.card {
-    width:300px;
-    height:300px;
-    background: white;
-    border-radius: 25px;
+.cboxt {
     text-align: center;
-    font-family: "New Amsterdam", sans-serif;
+    color:red;
+    margin:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.flushed {
+    opacity:25%;
+    width:350px;
+    height:350px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:1;
 }
